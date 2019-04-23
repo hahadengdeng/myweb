@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p align="center"><font color="#ff7f50">京东商品</font></p>
+<table>
+{% for f in  phone_list %}
+<tr>
+<td>商品ID:{{f.id }}&nbsp&nbsp&nbsp</td>
+<td>最高售价:{{ f.maxprice }}</td>
+<td>建议售价:{{ f.opprice }}</td>
+<td>当前售价:{{ f.pprice }}</td>
+</tr>
+{% endfor %}
+</table>
+</body>
+</html>
